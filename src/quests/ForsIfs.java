@@ -23,14 +23,14 @@
 */
 package quests;
 
-import java.util.Scanner;
+import java.util.Scanner;   // Scanner 클래스를 사용하기 위해 java.util 패키지를 임포트
 
 public class ForsIfs {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);   // Scanner 객체를 생성하고, System.in을 인자로 넘겨줌
         
         System.out.print("input number : ");
-        int number = scanner.nextInt();
+        int number = scanner.nextInt();     // 사용자로부터 입력 받은 정수를 읽어들여 number 변수에 저장
         
         for (int count = 0; count <= number; count++) {
             int result = (int)Math.pow(2, count);       /* Math.pow(2, count) : 2의 count 제곱 */
@@ -43,6 +43,6 @@ public class ForsIfs {
             if (result > number) break; // 입력 받은 number 보다 크면 반복문 종료
         }
 
-        scanner.close();  // 자원 반납
+        scanner.close();  // 자원 반납(리소스 누수를 방지하기 위해 더 이상 사용하지 않을 때는 Scanner 객체를 닫아야함)
     }
 }
