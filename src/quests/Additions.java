@@ -1,6 +1,6 @@
 // 두 정수를 받아서 합산하는 프로그램 작성
 package quests;
-
+// 외부 입력
 import java.util.Scanner;
 
 public class Additions {
