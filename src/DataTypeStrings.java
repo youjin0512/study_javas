@@ -1,30 +1,27 @@
-// refer : https://www.w3schools.com/java/java_strings.asp
+package co_templates;
 
 public class DataTypeStrings {
-    public static void main(String[] args) {
-        String strFirst = "Hello !"; // String : datatype, "Hello !" : 생성자 //
-        String strSecond = new String("World !"); // 정식 방법 //
-        // strFirst instanceof String      * instanceof : 디버깅 모드에서 제대로 할당해서 클래스 되었는지 확인할 때(=파이썬에서의 type)
-        // true
-
-        // strSecond instanceof String
-        // true
-
-        // strFirst.length()
-        // 7
-
-        // strSecond.length()
-        // 7
-
-        // strSecond.concat(strFirst)
-        // "World !Hello !"
-
-        // String strThird = strFirst.replaceAll("l", "R")
-        // "HeRRo !"
-
-        System.out.println("Hello World!");
-       // return 0; 
-
-
-    }
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "Hello";
+    String myStr3 = "Another String";
+    String myStr4 = null;
+    System.out.println(myStr1.equals(myStr2));
+    System.out.println(myStr1.equals(myStr3));
+  }
 }
+
+// myStr1 == myStr2
+// true
+// myStr1.equals(myStr2)
+// true
+// myStr1 == myStr4
+// false
+// myStr4 == null
+// true
+// myStr4.equals(null)
+// ""null"".equals(myStr4)
+// "".equals(myStr4)
+// false
+// (myStr4 != null && "".equals(myStr4))
+// false
